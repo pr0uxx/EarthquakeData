@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Earthquackles</title>
+    <title>Earthquakes</title>
 </head>
 
 <body>
@@ -26,13 +26,13 @@
                 console.error(error);
             })
 
-        $.ajax({
-            url: 'http://www.seismicportal.eu/fdsnws/event/1/query?limit=50&start=2020-12-20T00:00:00.0000&minlat=36.267432240459634&maxlat=47.02980486570483&minlon=6.693275655882755&maxlon=25.30411398805712',
-            crossDomain: true,
-            success: data => {
-                console.log(data);
-            }
-        });
+        // $.ajax({
+        //     url: 'http://www.seismicportal.eu/fdsnws/event/1/query?limit=50&start=2020-12-20T00:00:00.0000&minlat=36.267432240459634&maxlat=47.02980486570483&minlon=6.693275655882755&maxlon=25.30411398805712',
+        //     crossDomain: true,
+        //     success: data => {
+        //         console.log(data);
+        //     }
+        // });
     });
 
     // Changes XML to JSON
