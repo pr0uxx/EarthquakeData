@@ -1,5 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>My page title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+</head>
+
 <body>
-This is where the stuff will go
+    This is where the stuff will go
 </body>
 
 
@@ -17,11 +34,11 @@ This is where the stuff will go
             error => {
                 console.error(error);
             })
-        
+
         $.ajax({
             url: 'http://www.seismicportal.eu/fdsnws/event/1/query?limit=50&start=2020-12-20T00:00:00.0000&minlat=36.267432240459634&maxlat=47.02980486570483&minlon=6.693275655882755&maxlon=25.30411398805712',
-            crossDomain : true,
-            success : data => {
+            crossDomain: true,
+            success: data => {
                 console.log(data);
             }
         });
@@ -67,3 +84,5 @@ This is where the stuff will go
         return obj;
     };
 </script>
+
+</html>
